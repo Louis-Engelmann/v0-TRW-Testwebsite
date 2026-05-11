@@ -32,7 +32,7 @@ export function Process() {
     <section
       id="process"
       aria-labelledby="process-heading"
-      className="py-20 lg:py-28 bg-surface"
+      className="py-16 lg:py-20 bg-surface"
       ref={ref}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

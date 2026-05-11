@@ -21,7 +21,7 @@ export function Precision() {
     <section
       id="precision"
       aria-labelledby="precision-heading"
-      className="py-20 lg:py-28"
+      className="py-16 lg:py-20"
       ref={ref}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -29,9 +29,9 @@ export function Precision() {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
-          className="bg-surface rounded-xl p-6 sm:p-8 lg:p-12"
+          className="bg-surface rounded-xl p-8 sm:p-12 lg:p-16"
         >
-          <div className="grid lg:grid-cols-[40%_60%] gap-8 lg:gap-12 items-center">
+          <div className="grid lg:grid-cols-[35%_65%] gap-8 lg:gap-16 items-center">
             {/* Left Column: Shaft Illustration */}
             <motion.div
               initial={{ opacity: 0, x: -20 }}
@@ -47,6 +47,7 @@ export function Precision() {
               initial={{ opacity: 0, x: 20 }}
               animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
               transition={{ duration: 0.6, delay: 0.3, ease: 'easeOut' }}
+              className="pr-4 sm:pr-8 lg:pr-12"
             >
               <h2
                 id="precision-heading"

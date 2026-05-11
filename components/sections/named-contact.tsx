@@ -12,7 +12,7 @@ export function NamedContact() {
     <section
       id="contact"
       aria-labelledby="contact-heading"
-      className="py-16 lg:py-24"
+      className="py-16 lg:py-20"
       ref={ref}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

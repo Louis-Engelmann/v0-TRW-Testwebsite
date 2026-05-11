@@ -20,7 +20,7 @@ export function Hero() {
       aria-labelledby="hero-heading"
       className="min-h-[80vh] flex items-center pt-16"
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20 w-full">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16 w-full">
         <div className="grid lg:grid-cols-[55%_45%] gap-8 lg:gap-12 items-center">
           {/* Left Column: Content */}
           <motion.div

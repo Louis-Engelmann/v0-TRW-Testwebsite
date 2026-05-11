@@ -164,7 +164,7 @@ export function QuoteForm() {
     <section
       id="quote-form"
       aria-labelledby="quote-heading"
-      className="py-20 lg:py-28"
+      className="py-16 lg:py-20"
       ref={ref}
     >
       <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -182,7 +182,7 @@ export function QuoteForm() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.95 }}
                 transition={{ duration: 0.3 }}
-                className="text-center py-8"
+                className="text-center py-8 min-h-[600px] flex flex-col justify-center items-center"
               >
                 <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-green-500/10 flex items-center justify-center">
                   <CheckCircle className="w-8 h-8 text-green-500" />
@@ -467,7 +467,7 @@ export function QuoteForm() {
                   {/* Submit Button */}
                   <button
                     type="submit"
-                    disabled={isSubmitting || !isFormValid}
+                    disabled={isSubmitting}
                     className="w-full bg-accent text-accent-foreground py-3 px-6 rounded-lg font-medium transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-accent/90 focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-surface"
                     aria-busy={isSubmitting}
                   >
