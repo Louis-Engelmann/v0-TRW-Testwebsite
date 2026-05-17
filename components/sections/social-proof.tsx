@@ -35,7 +35,7 @@ export function SocialProof() {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.5 }}
-          className="text-center text-3xl lg:text-4xl font-semibold text-foreground mb-12"
+          className="text-center text-3xl lg:text-4xl font-bold tracking-tight text-foreground mb-12"
         >
           Trusted Performance
         </motion.h2>
@@ -51,9 +51,9 @@ export function SocialProof() {
                 delay: index * 0.1,
                 ease: 'easeOut',
               }}
-              className="bg-surface rounded-xl p-6 text-center hover:shadow-lg hover:shadow-black/20 transition-shadow"
+              className="bg-surface/80 backdrop-blur-md border border-white/5 shadow-[0_8px_30px_rgb(0,0,0,0.12)] rounded-xl p-6 text-center hover:shadow-[0_12px_40px_rgb(0,0,0,0.2)] transition-shadow"
             >
-              <p className="text-4xl lg:text-5xl font-bold text-foreground">
+              <p className="font-mono text-4xl lg:text-5xl font-bold tracking-tight text-foreground">
                 {stat.value}
               </p>
               <p className="mt-2 text-sm text-muted">{stat.label}</p>

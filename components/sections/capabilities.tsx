@@ -45,7 +45,7 @@ export function Capabilities() {
         >
           <h2
             id="capabilities-heading"
-            className="text-3xl lg:text-4xl font-semibold text-foreground"
+            className="text-3xl lg:text-4xl font-bold tracking-tight text-foreground"
           >
             Our Capabilities
           </h2>
@@ -67,9 +67,9 @@ export function Capabilities() {
                   delay: index * 0.1,
                   ease: 'easeOut',
                 }}
-                className="bg-surface rounded-xl p-6 hover:shadow-lg hover:shadow-black/20 transition-shadow group"
+                className="bg-surface/80 backdrop-blur-md border border-white/5 shadow-[0_8px_30px_rgb(0,0,0,0.12)] rounded-xl p-6 hover:shadow-[0_12px_40px_rgb(0,0,0,0.2)] transition-shadow group"
               >
-                <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
+                <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4 group-hover:bg-accent/20 group-hover:shadow-[0_0_15px_rgba(59,130,246,0.5)] transition-all duration-300">
                   <Icon className="w-6 h-6 text-accent" />
                 </div>
                 <h3 className="text-xl font-semibold text-foreground">

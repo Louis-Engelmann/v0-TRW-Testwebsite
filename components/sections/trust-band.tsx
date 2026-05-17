@@ -2,6 +2,7 @@
 
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
+import { ShieldCheck } from 'lucide-react'
 
 const logos = [
   { name: 'Automotive Partner 1' },
@@ -54,6 +55,18 @@ export function TrustBand() {
                 aria-label={`${logo.name} logo placeholder`}
               >
                 <span className="text-xs text-muted">Logo {index + 1}</span>
+              </div>
+            ))}
+          </div>
+
+          {/* Trust & Compliance Badges */}
+          <div className="mt-12 pt-8 border-t border-white/5 flex flex-wrap justify-center gap-6 sm:gap-10">
+            {['ISO 9001:2015', 'RoHS Compliant', 'REACH Certified'].map((cert) => (
+              <div key={cert} className="flex items-center gap-3 text-sm font-medium tracking-tight text-muted hover:text-foreground transition-colors cursor-default">
+                <div className="w-10 h-10 rounded-full bg-surface/80 border border-white/5 shadow-[0_4px_15px_rgb(0,0,0,0.1)] flex items-center justify-center">
+                  <ShieldCheck className="w-5 h-5 text-accent" />
+                </div>
+                <span className="font-mono">{cert}</span>
               </div>
             ))}
           </div>

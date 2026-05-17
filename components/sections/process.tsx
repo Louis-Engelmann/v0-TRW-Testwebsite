@@ -32,7 +32,7 @@ export function Process() {
     <section
       id="process"
       aria-labelledby="process-heading"
-      className="py-16 lg:py-20 bg-surface"
+      className="py-16 lg:py-20 bg-surface/50 border-y border-white/5"
       ref={ref}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -44,7 +44,7 @@ export function Process() {
         >
           <h2
             id="process-heading"
-            className="text-3xl lg:text-4xl font-semibold text-foreground"
+            className="text-3xl lg:text-4xl font-bold tracking-tight text-foreground"
           >
             How It Works
           </h2>
@@ -72,7 +72,7 @@ export function Process() {
                 className="relative text-center lg:text-left"
               >
                 {/* Background number */}
-                <div className="absolute -top-4 left-1/2 lg:left-0 -translate-x-1/2 lg:translate-x-0 text-8xl font-bold text-border/20 select-none pointer-events-none">
+                <div className="absolute -top-4 left-1/2 lg:left-0 -translate-x-1/2 lg:translate-x-0 font-mono text-8xl font-bold tracking-tight text-white/5 select-none pointer-events-none">
                   {step.number}
                 </div>
 

@@ -29,7 +29,7 @@ export function Precision() {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
-          className="bg-surface rounded-xl p-8 sm:p-12 lg:p-16"
+          className="bg-surface/80 backdrop-blur-md border border-white/5 shadow-[0_8px_30px_rgb(0,0,0,0.12)] rounded-xl p-8 sm:p-12 lg:p-16"
         >
           <div className="grid lg:grid-cols-[35%_65%] gap-8 lg:gap-16 items-center">
             {/* Left Column: Shaft Illustration */}
@@ -51,7 +51,7 @@ export function Precision() {
             >
               <h2
                 id="precision-heading"
-                className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground"
+                className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-foreground"
               >
                 Precision Turned Shaft
               </h2>
@@ -68,7 +68,7 @@ export function Precision() {
                     }`}
                   >
                     <span className="text-sm text-muted">{spec.name}</span>
-                    <span className="text-sm font-medium text-foreground">
+                    <span className="font-mono text-sm font-medium text-foreground">
                       {spec.value}
                     </span>
                   </div>

@@ -172,7 +172,7 @@ export function QuoteForm() {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
-          className="bg-surface rounded-xl p-6 sm:p-8 lg:p-12 shadow-xl shadow-black/30"
+          className="bg-surface/80 backdrop-blur-md border border-white/5 shadow-[0_8px_30px_rgb(0,0,0,0.12)] rounded-xl p-6 sm:p-8 lg:p-12"
         >
           <AnimatePresence mode="wait">
             {isSubmitted ? (
@@ -210,8 +210,7 @@ export function QuoteForm() {
               >
                 <div className="text-center mb-8">
                   <h2
-                    id="quote-heading"
-                    className="text-2xl sm:text-3xl font-semibold text-foreground"
+                    className="text-2xl sm:text-3xl font-bold tracking-tight text-foreground"
                   >
                     Request a Quote
                   </h2>
