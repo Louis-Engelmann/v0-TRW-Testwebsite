@@ -33,8 +33,7 @@ export function NamedContact() {
             {/* Contact Photo Placeholder */}
             <div
               className="w-20 h-20 rounded-full bg-surface border border-border flex items-center justify-center mb-4"
-              role="img"
-              aria-label="Thomas Richter, Head of Sales at Veltec Precision"
+              aria-hidden="true"
             >
               <User className="w-8 h-8 text-muted" />
             </div>

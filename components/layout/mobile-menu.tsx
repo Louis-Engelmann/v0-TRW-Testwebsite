@@ -99,7 +99,7 @@ export function MobileMenu({ isOpen, onClose, navLinks }: MobileMenuProps) {
                   onClick={scrollToForm}
                   className="w-full bg-accent text-accent-foreground py-3 px-4 rounded-lg text-base font-medium hover:bg-accent/90 transition-colors focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-surface"
                 >
-                  Get a Quote
+                  Talk to Sales Engineering
                 </button>
               </div>
             </div>

@@ -6,7 +6,9 @@ import { MobileMenu } from './mobile-menu'
 
 const navLinks = [
   { href: '#capabilities', label: 'Capabilities' },
+  { href: '#industries', label: 'Industries' },
   { href: '#process', label: 'Process' },
+  { href: '#case-studies', label: 'Case studies' },
   { href: '#contact', label: 'Contact' },
 ]
 
@@ -47,7 +49,7 @@ export function Header() {
                 onClick={scrollToForm}
                 className="bg-accent text-accent-foreground px-4 py-2 rounded-lg text-sm font-medium hover:bg-accent/90 transition-colors focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background"
               >
-                Get a Quote
+                Talk to Sales Engineering
               </button>
             </nav>
 

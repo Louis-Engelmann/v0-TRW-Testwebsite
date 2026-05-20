@@ -15,13 +15,13 @@ const capabilities = [
     icon: Gauge,
     title: 'Tight Tolerances',
     description:
-      'Achieving ±0.003mm tolerances consistently with advanced metrology and in-process quality controls.',
+      'Tight-tolerance turning supported by in-process inspection and measurement-driven setup validation.',
   },
   {
     icon: Shield,
     title: 'Material Expertise',
     description:
-      'Stainless steel, titanium, aluminum, brass, and exotic alloys processed with optimal parameters.',
+      'Common production materials supported, including steel, stainless, aluminum, and brass (others by review).',
   },
 ]
 

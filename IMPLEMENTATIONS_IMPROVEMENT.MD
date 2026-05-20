@@ -80,11 +80,11 @@
 
 **Primary files later:** `components/sections/hero.tsx`
 
-- [ ] Write a 1–2 sentence positioning statement that specifies:
+- [x] Write a 1–2 sentence positioning statement that specifies:
   - **what** (precision-turned parts / CNC turning)
   - **for whom** (OEM / Tier-1 / region)
   - **differentiator** (tolerances, metrology, materials, responsiveness)
-- [ ] Choose **3 proof points** that are defensible (examples):
+- [x] Choose **3 proof points** that are defensible (examples):
   - certifications (with linkable proof)
   - manufacturing capabilities (machines, metrology)
   - delivery / volume metrics (only if real)
@@ -93,7 +93,8 @@
 
 **Primary files later:** `components/sections/hero.tsx`, `public/*`
 
-- [ ] Replace “Technical Image Area” placeholder with a real image/video treatment.
+- [x] Replace “Technical Image Area” placeholder with a professional interim visual plate (until real media is available).
+- [ ] Replace interim plate with a real image/video treatment (Phase 0 assets required).
 - [ ] Ensure the visual supports the claim (actual machining/inspection, not generic stock that reads “SaaS”).
 - [ ] Ensure accessibility: proper alt text (or `aria-hidden` if purely decorative).
 
@@ -101,9 +102,9 @@
 
 **Primary files later:** `components/layout/header.tsx`, `components/sections/hero.tsx`
 
-- [ ] Decide primary CTA label + intent:
+- [x] Decide primary CTA label + intent:
   - “Request a Quote” (transactional) vs “Talk to Sales Engineering” (credibility-first, lighter ask)
-- [ ] Ensure CTA appears consistently (hero + header) and feels coherent with the rest of the story.
+- [x] Ensure CTA appears consistently (hero + header) and feels coherent with the rest of the story.
 
 ---
 
@@ -262,7 +263,7 @@
 ## Progress tracker (roll-up)
 
 - [ ] **Phase 0**: Assets & permissions locked
-- [ ] **Phase 1**: Hero messaging + real hero visual shipped
+- [ ] **Phase 1**: Hero messaging + real hero visual shipped *(messaging + proof points + CTA alignment done; real media still pending)*
 - [ ] **Phase 2**: Trust signals verifiable (logos/certs/stats)
 - [ ] **Phase 3**: Narrative structure improved (industries + case studies + anchors)
 - [ ] **Phase 4**: Visual polish pass complete

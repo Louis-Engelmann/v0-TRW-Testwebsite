@@ -14,13 +14,13 @@ const steps = [
     number: '02',
     title: 'Engineering Review',
     description:
-      'Our team evaluates manufacturability, suggests optimizations, and provides a detailed quote within 48 hours.',
+      'We evaluate manufacturability, suggest optimizations, and provide a detailed quote based on your requirements.',
   },
   {
     number: '03',
     title: 'Production & Delivery',
     description:
-      'Precision manufacturing with rigorous quality control, followed by reliable on-time delivery worldwide.',
+      'Precision manufacturing with defined quality checkpoints, followed by predictable delivery and communication.',
   },
 ]
 

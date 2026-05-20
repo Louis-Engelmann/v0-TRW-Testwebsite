@@ -3,10 +3,10 @@
 import { motion } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
 
-const stats = [
-  { value: '25+', label: 'Years Experience' },
-  { value: '150+', label: 'OEM Clients' },
-  { value: '±0.005mm', label: 'Tolerance' },
+const proofPoints = [
+  { title: 'ISO 9001:2015', subtitle: 'Quality Management' },
+  { title: 'Inspection-first', subtitle: 'In-process + final checks' },
+  { title: 'Supplier-ready', subtitle: 'Documentation & traceability' },
 ]
 
 export function Hero() {
@@ -38,11 +38,12 @@ export function Hero() {
               id="hero-heading"
               className="text-[clamp(2rem,6vw,4rem)] font-bold text-foreground leading-tight tracking-tight text-balance"
             >
-              Precision-Turned Parts for Automotive Excellence
+              Precision-turned components for automotive supply chains
             </h1>
             
             <p className="mt-6 text-lg text-muted max-w-xl leading-relaxed">
-              German engineering meets modern CNC technology. We manufacture complex turned components for OEMs and Tier-1 suppliers with tolerances as tight as ±0.003mm.
+              CNC turning with an inspection-first process—built for repeatability,
+              documentation, and stable tolerances across production runs.
             </p>
 
             <motion.button
@@ -51,28 +52,28 @@ export function Hero() {
               whileTap={{ scale: 0.98 }}
               className="mt-8 inline-flex items-center gap-2 bg-accent text-accent-foreground px-6 py-3 rounded-lg text-base font-medium hover:bg-accent/90 transition-colors focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background"
             >
-              Request a Part Quote
+              Talk to Sales Engineering
               <ArrowRight className="w-4 h-4" />
             </motion.button>
 
-            {/* Stats Row */}
+            {/* Proof points */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2, ease: 'easeOut' }}
               className="mt-12 flex flex-col sm:flex-row sm:items-center gap-6 sm:gap-0"
             >
-              {stats.map((stat, index) => (
+              {proofPoints.map((item, index) => (
                 <div
-                  key={stat.label}
+                  key={item.title}
                   className={`flex flex-col items-center sm:items-start ${
                     index > 0 ? 'sm:pl-8 sm:border-l sm:border-border' : ''
-                  } ${index < stats.length - 1 ? 'sm:pr-8' : ''}`}
+                  } ${index < proofPoints.length - 1 ? 'sm:pr-8' : ''}`}
                 >
-                  <span className="font-mono text-[clamp(1.5rem,4vw,2.5rem)] font-bold tracking-tight text-foreground">
-                    {stat.value}
+                  <span className="font-mono text-base sm:text-lg font-semibold tracking-tight text-foreground">
+                    {item.title}
                   </span>
-                  <span className="text-sm text-muted">{stat.label}</span>
+                  <span className="text-sm text-muted">{item.subtitle}</span>
                 </div>
               ))}
             </motion.div>
@@ -86,19 +87,15 @@ export function Hero() {
             className="order-2 lg:order-2"
           >
             <div className="relative aspect-[4/3] rounded-xl overflow-hidden bg-surface/50 border border-white/5 shadow-[0_8px_30px_rgb(0,0,0,0.12)] backdrop-blur-sm">
-              {/* Placeholder for hero image */}
-              <div 
-                className="absolute inset-0 bg-gradient-to-br from-surface/80 to-surface/20 flex items-center justify-center"
-                role="img"
-                aria-label="Precision CNC machining center producing automotive components"
-              >
-                <div className="text-center text-muted">
-                  <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-border/50 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
-                    <svg className="w-8 h-8 text-muted/70" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
+              {/* Decorative visual plate (swap with real photo/video later) */}
+              <div className="absolute inset-0 bg-gradient-to-br from-surface/80 to-surface/20" aria-hidden="true">
+                <div className="absolute inset-0 opacity-70 [background-image:linear-gradient(to_right,rgba(255,255,255,0.06)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.06)_1px,transparent_1px)] [background-size:32px_32px]" />
+                <div className="absolute -top-24 -right-24 h-72 w-72 rounded-full bg-accent/15 blur-3xl" />
+                <div className="absolute -bottom-24 -left-24 h-72 w-72 rounded-full bg-accent/10 blur-3xl" />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="rounded-full border border-white/10 bg-background/10 px-5 py-2 text-xs font-mono tracking-tight text-muted">
+                    Inspection-first • repeatable runs • supplier-ready docs
                   </div>
-                  <p className="text-sm font-medium tracking-tight">Technical Image Area</p>
                 </div>
               </div>
             </div>

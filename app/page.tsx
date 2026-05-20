@@ -8,6 +8,8 @@ import { Capabilities } from '@/components/sections/capabilities'
 import { Process } from '@/components/sections/process'
 import { QuoteForm } from '@/components/sections/quote-form'
 import { NamedContact } from '@/components/sections/named-contact'
+import { IndustriesParts } from '@/components/sections/industries-parts'
+import { CaseStudies } from '@/components/sections/case-studies'
 
 export default function Home() {
   return (
@@ -16,10 +18,12 @@ export default function Home() {
       <main>
         <Hero />
         <TrustBand />
-        <Precision />
-        <SocialProof />
         <Capabilities />
+        <IndustriesParts />
+        <Precision />
         <Process />
+        <CaseStudies />
+        <SocialProof />
         <QuoteForm />
         <NamedContact />
       </main>
